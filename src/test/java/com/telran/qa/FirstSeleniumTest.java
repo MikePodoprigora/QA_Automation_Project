@@ -28,6 +28,8 @@ public class FirstSeleniumTest {
         System.out.println("site opened!");
 
         wd.findElement(By.name("q")).click();
+
+        // to wright word Selenium in a search field
         wd.findElement(By.name("q")).sendKeys("Selenium" + Keys.ENTER);
 
        String text = wd.findElement(By.tagName("h3")).getText();
